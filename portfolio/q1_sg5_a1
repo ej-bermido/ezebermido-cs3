@@ -1,0 +1,16 @@
+class Hero:
+    def __init__(self, name, hp):
+        self.name = name
+        self.hp = hp
+
+    def take_damage(self, dmg):
+        self.hp = self.hp - dmg
+  
+eze = Hero("Hero Eze", 100)
+jonas = Hero("Enemy Jonas", 100)
+
+eze.take_damage(10)
+print(f"{eze.name} took 10 damage!")
+
+print(f"{eze.name} has HP: {eze.hp}")
+print(f"{jonas.name} has HP: {jonas.hp}")
